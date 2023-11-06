@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Arief Rois Alamsyah</title>
+    <link rel="shorcut icon" href="gambar/favicon.ico"/>
+</head>
+<body>
+    
+    <table border="1" width="75%" align="center">
+        <tr>
+            <td colspan="8" height="150px" align="center">
+                <img src="gambar/logounper.png" height="200px">
+                <h1>UNIVERSITAS PERJUANGAN TASIKMALAYA</h1>
+            </td>
+        </tr>
+        <tr>
+            <td height="50px" align="center"><a href="index.html" style="text-decoration: none; color: black;">Home</a></td>
+            <td height="50px" align="center"><a href="struktur.html" style="text-decoration: none; color: black;">Struktur Organisasi</a></td>
+            <td height="50px" align="center"><a href="visimisi.html" style="text-decoration: none; color: black;">Visi Misi</a></td>
+            <td height="50px" align="center"><a href="fakultas.html" style="text-decoration: none; color: black;">Fakultas</a></td>
+            <td height="50px" align="center"><a href="bem.html" style="text-decoration: none; color: black;">BEM</a></td>
+            <td height="50px" align="center"><a href="ukm.html" style="text-decoration: none; color: black;">UKM</a></td>
+            <td height="50px" align="center"><a href="pmb.html" style="text-decoration: none; color: black;">PMB</td>
+            <td height="50px" align="center"><a href="hubungi.html" style="text-decoration: none; color: black;">Hubungi Kami</a></td>
+        </tr>
+        <tr>
+            <td colspan="2" height="500px" width="20%" valign="top" align="center">
+                <a href="pmb.html">
+                    <img src="gambar/bannerpmb.jpg">
+                </a>
+                <a href="https://youtu.be/xvFZjo5PgG0?si=CzR2Ur3wW7fyT2By">
+                    <img src="gambar/bannerjurnal.jpg">
+                </a>
+            </td>
+            <td colspan="6" valign="top">
+                <h2 align="center">FORM PENDAFTARAN MAHASISWA BARU</h2>
+                <form action="simpanktp.php" method="POST" autocomplete="on" >
+                    <fieldset>
+                        <legend>Data Diri</legend>
+
+                        <label for="nik">Nama Lengkap</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap" autofocus required>
+                        <br><br>
+
+                        <label for="nik">Nomor Identitas (NIK)</label><br>
+                        <input type="number" id="nik" name="nik" maxlength="16" placeholder="Masukkan Nomor NIK">
+                        <br><br>
+                        
+                        <label for="tempat_lahir"> Tempat Lahir </label><br>
+                        <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Masukkan Tempat Lahir Anda">
+                        <br><br>
+                        
+                        <label for="tanggal_lahir"> Tanggal Lahir </label><br>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir" placeholder="Masukkan Tanggal Lahir Anda" >
+                        <br><br>
+                        
+                        <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                        <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Lakilaki"> Laki-laki
+                        <input type="radio" id="jenis_kelamin" name="jenis_kelamin" value="Perempuan"> Perempuan
+                        <br><br>
+
+                        <label for="agama">Agama</label><br>
+                        <select name="agama" id="agama">
+                            <option value="">Pilih Agama</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="khonghucu">Khonghucu</option>
+                        </select>
+                        <br><br>
+
+                        <label for="kewarganegaraan">Kewarganegaraan</label><br>
+                        <input type="radio" id="warga" name="warga" value="WNI"> WNI
+                        <input type="radio" id="warga" name="warga" value="WNA"> WNA
+                        <br><br>
+                        
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email" placeholder="Masukkan Email">
+                        <br><br>
+                        
+                        <label for="no_telp">No Telp</label><br>
+                        <input type="number" id="no_telp" name="no_telp" placeholder="Masukkan No Telp">
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Data Alamat Asal</legend> 
+
+                        <label for="alamat"> Alamat</label><br>
+                        <textarea id="alamat" name="alamat" rows="4" cols="20" placeholder="Masukkan Alamat"></textarea>
+                        <br><br>
+
+                        <label for="kode_pos">Kode Pos</label><br>
+                        <input type="number" id="kode_pos" name="kode_pos" placeholder="Masukkan Kode Pos">
+                        <br><br>
+
+                        <label for="keldesa"> Kel/Desa </label><br>
+                        <input type="text" id="keldesa" name="keldesa" placeholder="Masukkan Kelurahan/Desa Anda" >
+                        <br><br>
+
+                        <label for="kecamatan"> Kecamatan </label><br>
+                        <input type="text" id="kecamatan" name="kecamatan" placeholder="Masukkan Kecamatan Anda" >
+                        <br><br>
+
+                        <label for="provinsi">Provinsi</label><br>
+                        <select name="provinsi" id="provinsi">
+                            <option value="">Pilih Provinsi</option>
+                            <option value="jabar">Jawa Barat</option>
+                            <option value="jateng">Jawa Tengah</option>
+                            <option value="jatim">Jawa Timur</option>
+                            <option value="aceh">Nanggroe Aceh Darussalam</option>
+                            <option value="sumut">Sumatera Utara</option>
+                            <option value="sumsel">Sumatera Selatan</option>
+                            <option value="sumbar">Sumatera Barat</option>
+                            <option value="bengkulu">Bengkulu</option>
+                            <option value="kepriau">Kepulauan Riau</option>
+                            <option value="jambi">Jambi</option>
+                            <option value="lampung">Lampung</option>
+                            <option value="bangkabelitung">Bangka Belitung</option>
+                            <option value="kalba">Kalimantan Barat</option>
+                            <option value="kaltim">Kalimantan Timur</option>
+                            <option value="kalsel">Kalimantan Selatan</option>
+                            <option value="kalteng">Kalimantan Tengah</option>
+                            <option value="kalut">Kalimantan Utara</option>
+                            <option value="banten">Banten</option>
+                            <option value="jakarta">DKI Jakarta</option>
+                            <option value="yogyakarta">Daerah Istimewa Yogyakarta</option>
+                            <option value="ntt">Nusa Tenggara Timur</option>
+                            <option value="ntb">Nusa Tenggara Barat</option>
+                            <option value="gorontalo">Gorontalo</option>
+                            <option value="sulbar">Sulawesi Barat</option>
+                            <option value="sulteng">Sulawesi Tengah</option>
+                            <option value="sulut">Sulawesi Utara</option>
+                            <option value="sulgara">Sulawesi Tenggara</option>
+                            <option value="sulsel">Sulawesi Selatan</option>
+                            <option value="malukuut">Maluku Utara</option>
+                            <option value="maluku">Maluku</option>
+                            <option value="papuabar">Papua Barat</option>
+                            <option value="papua">Papua</option>
+                            <option value="pateng">Papua Tengah</option>
+                            <option value="papeg">Papua Pegunungan</option>
+                            <option value="pasel">Papua Selatan</option>
+                            <option value="pabada">Papua Barat Daya</option>
+                        </select>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Data Pendidikan</legend>
+                        
+                        <label for="asal_sekolah"> Asal Sekolah </label><br>
+                        <input type="text" id="asal_sekolah" name="asal_sekolah" placeholder="Masukkan Asal Sekolah Anda" >
+                        <br><br>
+                        
+                        <label for="jurusan"> Jurusan </label><br>
+                        <input type="text" id="jurusan" name="jurusan" placeholder="Masukkan Jurusan" >
+                        <br><br>
+                        
+                        <label for="tahun_lulus"> Tahun Lulus </label><br>
+                        <input type="text" id="tahun_lulus" name="tahun_lulus" placeholder="Masukkan Tahun Lulus Anda">
+                        <br><br>
+
+                        <label for="gambar"> Foto </label><br>
+                        <input type="file" accept="image/*" name="gambar" placeholder="Masukkan Foto Diri Anda" >
+                        <br><br>
+
+                        <label for="ijazah"> Ijazah </label><br>
+                        <input type="file" accept="image/*" name="ijazah" placeholder="Masukkan Ijazah Anda" >
+                        <br><br>
+                        
+                        <label for="skhun"> SKHUN </label><br>
+                        <input type="file" accept="image/*" name="skhun" placeholder="Masukkan SKHUN Anda" >
+                        <br>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Data Orang Tua</legend>
+
+                        <label for="nama_ayah">Nama Ayah</label><br>
+                        <input type="text" id="nama_ayah" name="nama_ayah" placeholder="Masukkan Nama Ayah Anda">
+                        <br><br>
+                        
+                        <label for="pekerjaan_ayah">Pekerjaan Ayah</label><br>
+                        <input type="text" id="pekerjaan_ayah" name="pekerjaan_ayah" placeholder="Masukkan Pekerjaan Ayah Anda">
+                        <br><br>
+                        
+                        <label for="penghasilan_ayah">Pengahasilan Ayah</label><br>
+                        <input type="number" id="penghasilan_ayah" name="penghasilan_ayah" placeholder="Masukkan Pengahasilan Ayah Anda">
+                        <br><br>
+                        
+                        <label for="nama_ibu">Nama Ibu</label><br>
+                        <input type="text" id="nama_ibu" name="nama_ibu" placeholder="Masukkan Nama Ibu Anda">
+                        <br><br>
+                        
+                        <label for="pekerjaan_ibu">Pekerjaan Ibu</label><br>
+                        <input type="text" id="pekerjaan_ibu" name="pekerjaan_ibu" placeholder="Masukkan Pekerjaan Ibu Anda">
+                        <br><br>
+                        
+                        <label for="penghasilan_ibu">Pengahasilan Ibu</label><br>
+                        <input type="number" id="penghasilan_ibu" name="penghasilan_ibu" placeholder="Masukkan Pengahasilan Ibu Anda">
+                        <br>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Pilihan Program Studi</legend>
+
+                        <label for="pps1">Pilih Program Studi 1</label><br>
+                        <select name="pps1" id="pps1">
+                            <option value="">Pilih Program Studi</option>
+                            <option value="pbi">S1 - Pendidikan Bahasa Inggris</option>
+                            <option value="pgsd">S1 - Pendidikan Guru dan Sekolah Dasar</option>
+                            <option value="manajemen">S1 - Manajemen</option>
+                            <option value="akutansi">S1 - Akutansi</option>
+                            <option value="ti">S1 - Teknik Informatika</option>
+                            <option value="ts">S1 - Teknik Sipil</option>
+                            <option value="farmasi">S1 - Farmasi</option>
+                            <option value="agri">S1 - Agribisnis</option>
+                            <option value="agro">S1 - Agroteknologi</option>
+                            <option value="perternakan">S1 - Perternakan</option>
+                        </select><br><br>
+
+                        <label for="pps2">Pilih Program Studi 2</label><br>
+                        <select name="pps2" id="pps2">
+                            <option value="">Pilih Program Studi</option>
+                            <option value="pbi">S1 - Pendidikan Bahasa Inggris</option>
+                            <option value="pgsd">S1 - Pendidikan Guru dan Sekolah Dasar</option>
+                            <option value="manajemen">S1 - Manajemen</option>
+                            <option value="akutansi">S1 - Akutansi</option>
+                            <option value="ti">S1 - Teknik Informatika</option>
+                            <option value="ts">S1 - Teknik Sipil</option>
+                            <option value="farmasi">S1 - Farmasi</option>
+                            <option value="agri">S1 - Agribisnis</option>
+                            <option value="agro">S1 - Agroteknologi</option>
+                            <option value="perternakan">S1 - Perternakan</option>
+                        </select>
+                    </fieldset><br>
+
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Simpan">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="8" height="50px" align="center">Copyright 2014-2023 © Arief Rois Alamsyah</td>
+        </tr>
+    </table>
+</body>
+</html>
