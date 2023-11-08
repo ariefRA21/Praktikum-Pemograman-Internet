@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <script>
+      function fungsi1() {
+        alert('Aku muncul karena di klik');
+      }
+      function fungsi2() {
+        alert('Aku muncul karena di sentuh');
+      }
+      function fungsi3() {
+        alert('Aku muncul karena menekan tombol keyboard');
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Event JavaScript</h2>
+    <button
+      type="button"
+      onclick="fungsi1()"
+    >
+      Klik Aku
+    </button>
+    <p
+      style="width: 100px; border: 1px solid black"
+      onmouseover="fungsi2()"
+    >
+      Sentuh Paragraf Ini, Posisikan cursor ada di area paragraf ini
+    </p>
+    <input
+      type="text"
+      onkeypress="fungsi3()"
+      placeholder="Ketika Sesuatu"
+    />
+  </body>
+</html>

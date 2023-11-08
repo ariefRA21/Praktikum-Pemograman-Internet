@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Judul Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style tag body */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Header/logo Judul */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+
+            color: white;
+        }
+
+        /* Style box navigasi */
+        .navbar {
+            display: flex;
+            background-color: #333;
+        }
+
+        /* Style navigasi link */
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* ubah warna link menu ketika disentuh */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Kolom container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/kiri kolom */
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Kolom utama */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* contoh gambar, untuk contoh saja */
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+
+        /* Tampilan responsive - ketika lebar layar kurang dari700px ,maka akan membuat
+dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
+        @media screen and (max-width: 700px) {
+
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Note -->
+    <div style="background:yellow;padding:5px">
+        <h4 style="text-align:center">Ubah ukuran lebar layar browser untuk melihat
+            perubahan.</h4>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Website Ku</h1>
+        <p>Dengan Tampilan <b>Flexible</b>.</p>
+    </div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Menu 1</a>
+        <a href="#">Menu 2</a>
+        <a href="#">Menu 3</a>
+        <a href="#">Menu 4</a>
+    </div>
+    <!-- The flexible grid (content) -->
+
+    <div class="row">
+        <div class="side">
+            <h2>Tentang saya</h2>
+            <h5>Foto saya:</h5>
+            <div class="fakeimg" style="height:200px;">Foto</div>
+            <p>Contoh teks contoh teks contoh teks..</p>
+            <h3>Contoh Teks</h3>
+            <p>Contoh teks contoh teks contoh teks.</p>
+            <div class="fakeimg" style="height:60px;">Foto</div><br>
+            <div class="fakeimg" style="height:60px;">Foto</div><br>
+            <div class="fakeimg" style="height:60px;">Foto</div>
+        </div>
+        <div class="main">
+            <h2>JUDUL BERITA</h2>
+            <h5>Judul deskripsi, 1 Januari, 2021</h5>
+            <div class="fakeimg" style="height:200px;">Foto</div>
+            <p>contoh teks..</p>
+            <p>Contoh teks contoh teks contoh teks contoh teks contoh teks contoh teks
+                contoh teks contoh teks contoh teks contoh teks contoh teks contoh teks contoh
+                teks contoh teks contoh teks.</p>
+            <br>
+            <h2>JUDUL BERITA</h2>
+            <h5>Judul deskripsi, 1 Januari, 2021</h5>
+            <div class="fakeimg" style="height:200px;">Foto</div>
+            <p>contoh teks..</p>
+            <p>Contoh teks contoh teks contoh teks contoh teks contoh teks contoh teks
+                contoh teks contoh teks contoh teks contoh teks contoh teks contoh teks contoh
+                teks contoh teks contoh teks.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

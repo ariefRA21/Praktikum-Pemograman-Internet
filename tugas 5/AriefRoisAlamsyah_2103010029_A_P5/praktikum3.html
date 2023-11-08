@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Buat empat kolom yang sama yang berada di samping satu sama lain */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        /* Bersihkan gaya mengapung setelah kolom */
+        .row:after {
+            content: "";
+
+            display: table;
+            clear: both;
+        }
+
+        /* Pada layar lebar 992px atau kurang, beralih dari empat kolom menjadi dua kolom
+*/
+        @media screen and (max-width: 992px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Pada layar lebar 600px atau kurang, buat tumpukan kolom di atas satu sama
+lain, bukan di samping satu sama lain */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Tampilan 4 Kolom</h2>
+    <p><strong>Ubah ukuran layar untuk melihat perubahan yang terjadi.</strong> Pada
+        layar lebar 992px atau kurang, kolom alan berubah dar 4 kolom menjadi 2 kolom.
+        pada layar lebar 600px atau kurang, kolom akan menumpuk satu sama lain, bukan di
+        samping satu sama lain.</p>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2>Kolom 1</h2>
+            <p>Contoh tulisan..</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2>Kolom 2</h2>
+            <p>Contoh tulisan..</p>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <h2>Kolom 3</h2>
+            <p>Contoh tulisan..</p>
+        </div>
+
+        <div class="column" style="background-color:#ddd;">
+            <h2>Kolom 4</h2>
+            <p>Contoh Tulisan..</p>
+        </div>
+    </div>
+</body>
+
+</html>

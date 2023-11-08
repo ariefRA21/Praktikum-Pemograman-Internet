@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+box-sizing: border-box;
+}
+/* Style untuk navigasi atas */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+/* Style untuk topnav hyperlink */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Warna berubah ketika disentuh */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+/* Pada layar lebarnya 600px atau kurang, buat link menjadi menumpuk ke atas buka 
+ke samping */
+@media screen and (max-width: 600px) {
+.topnav a {
+float: none;
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<h2>Membuat Menu Responsive </h2>
+<p>Ubah ukuran layar browser anda untuk melihat peprubahan yang terjadi: ketika 
+layar kurang dari sama dengan 600px, menu akan ditampilkan secara vertikal dari 
+asalnya yaitu secra horizontal.</p>
+<div class="topnav">
+<a href="#">Menu 1</a>
+<a href="#">Menu 2</a>
+<a href="#">Menu 3</a>
+</div>
+</body>
+</html>

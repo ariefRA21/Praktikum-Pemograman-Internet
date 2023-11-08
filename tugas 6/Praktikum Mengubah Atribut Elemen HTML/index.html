@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <script>
+      function lampu_on() {
+        document.getElementById('lampu').src = 'foto/lampu on.png';
+      }
+      function lampu_off() {
+        document.getElementById('lampu').src = 'foto/lampu off.png';
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Java Script Dapat Mengubah Atribut Elemen HTML</h2>
+    <img
+      src="foto/lampu off.png"
+      id="lampu"
+    />
+    <button
+      type="button"
+      onclick="lampu_on()"
+    >
+      ON
+    </button>
+    <button
+      type="button"
+      onclick="lampu_off()"
+    >
+      OFF
+    </button>
+  </body>
+</html>

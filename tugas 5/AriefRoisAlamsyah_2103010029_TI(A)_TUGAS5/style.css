@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style tag body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header/logo Judul */
+.header img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Style box navigasi */
+.navbar {
+  display: flex;
+  background-color: #333;
+  justify-content: center;
+}
+
+/* Style navigasi link */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ubah warna link menu ketika disentuh */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Kolom container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/kiri kolom */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Kolom utama */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 50px;
+}
+
+/* gambar */
+.img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Tampilan responsive - ketika lebar layar kurang dari700px ,maka akan membuat
+dua kolom bertumpuk satu sama lain, bukan di samping satu sama lain */
+@media screen and (max-width: 800px) {
+  .image,
+  .footer,
+  .img,
+  .main,
+  .row,
+  .header img,
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+}
